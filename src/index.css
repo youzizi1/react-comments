@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+}
+
+.App {
+  width: 640px;
+  height: 800px;
+  margin: 0 auto;
+}
+
+.comment-input {
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.comment-input label {
+  width: 100px;
+}
+
+.comment-input input,
+.comment-input textarea {
+  flex: 1;
+  border: 1px solid #ccc;
+}
+
+.comment-input input:focus,
+.comment-input textarea:focus {
+  outline: 1px solid skyblue;
+}
+
+.comment-input textarea {
+  min-height: 120px;
+  max-height: 480px;
+}
+
+.comment-input__username,
+.comment-input__content {
+  display: flex;
+  padding: 10px 0;
+}
+
+.comment-input__button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.comment-input__button button {
+  width: 96px;
+  height: 48px;
+  border: none;
+  background-color: skyblue;
+  color: #fff;
+  cursor: pointer;
+}
+
+.comment-list {
+  width: 100%;
+  padding: 0 10px 12px 10px;
+  margin-top: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.list-item {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+}
+
+.list-item__username {
+  width: 50px;
+  padding: 12px 0 24px;
+  font-style: italic;
+  color: skyblue;
+}
+
+.list-item__content {
+  position: relative;
+  flex: 1;
+  padding: 12px 60px 24px 0;
+}
+
+.comment-list--no {
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.item__content--del {
+  position: absolute;
+  top: 6px;
+  right: 12px;
+  font-size: 14px;
+  color: skyblue;
+}
+
+.item__content--time {
+  position: absolute;
+  bottom: 6px;
+  right: 12px;
+  font-size: 14px;
+}
+
+code {
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  padding: 0 2px;
+}
